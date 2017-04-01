@@ -1,0 +1,18 @@
+SMAP
+RegistroVideo_jsp.java
+JSP
+*S JSP
+*F
++ 0 RegistroVideo.jsp
+RegistroVideo.jsp
++ 1 HeaderSesion.jsp
+HeaderSesion.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+5,15:50
+5#1,102:65
+19#0,30:167
+5#2,28:197
+48#0,8:224
+*E
