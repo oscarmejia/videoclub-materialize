@@ -8,6 +8,14 @@
         <servlet-name>IniLogin</servlet-name>
         <servlet-class>conecta.IniLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>IngresoVideo</servlet-name>
+        <servlet-class>conecta.IngresoVideo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Listar</servlet-name>
+        <servlet-class>conecta.Listar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>InsertarRegistro</servlet-name>
         <url-pattern>/InsertarRegistro</url-pattern>
@@ -15,6 +23,14 @@
     <servlet-mapping>
         <servlet-name>IniLogin</servlet-name>
         <url-pattern>/IniLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IngresoVideo</servlet-name>
+        <url-pattern>/IngresoVideo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Listar</servlet-name>
+        <url-pattern>/Listar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

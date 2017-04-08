@@ -10,14 +10,14 @@
         <a href="#" class="brand-logo red-text text-accent-2">VIDEOCLUB</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#" class="red-text text-accent-2"><i class="material-icons left">present_to_all</i>Registro</a></li>
-            <li><a href="#" class="red-text text-accent-2"><i class="material-icons left">visibility</i>Listar</a></li>
-            <li><a href="#" class="red-text text-accent-2"><i class="material-icons left">playlist_play</i>Ver Videos</a></li>
+            <li><a href="RegistroVideo.jsp" class="red-text text-accent-2"><i class="material-icons left">present_to_all</i>Registro</a></li>
+            <li><a href="Listar" class="red-text text-accent-2"><i class="material-icons left">visibility</i>Listar</a></li>
+            <li><a href="#" class="red-text text-accent-2"><i class="material-icons left    ">playlist_play</i>Ver Videos</a></li>
         </ul>
         <!--esta sera la lista que se mostrara en moviles -->
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="#"><i class="material-icons left">present_to_all</i>Registro</a></li>
-            <li><a href="#"><i class="material-icons left">visibility</i>Listar</a></li>
+            <li><a href="RegistroVideo.jsp"><i class="material-icons left">present_to_all</i>Registro</a></li>
+            <li><a href="Listar"><i class="material-icons left">visibility</i>Listar</a></li>
             <li><a href="#"><i class="material-icons left">playlist_play</i>Ver Videos</a></li>
         </ul>
     </div>
