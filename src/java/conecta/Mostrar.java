@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author oscar
  */
-public class Listar extends HttpServlet {
+public class Mostrar extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -42,16 +42,16 @@ public class Listar extends HttpServlet {
             
             conectador co =new conectador();
             Connection cnt =co.con();
-//            String ID =(String)request.getAttribute("indice");
-            String sql="SELECT * FROM regvideos";
+            String ID =(String)request.getParameter("id");
+            String sql="SELECT * FROM regvideos WHERE id="+ ID +"";
 //            String Sql="SELECT * FROM regvideos WHERE id="+ID+";";
-            Statement st =cnt.createStatement();
-            ResultSet rst = st.executeQuery(sql);
+            Statement st1 =cnt.createStatement();
+            ResultSet rst1 = st1.executeQuery(sql);
 //            ResultSet rstm = st.executeQuery(Sql);
             
-            request.setAttribute("lista", rst);
-            RequestDispatcher rd = request.getRequestDispatcher("Listar.jsp");
-            rd.forward(request, response);
+            request.setAttribute("ver", rst1);
+            RequestDispatcher rd1 = request.getRequestDispatcher("mostrar.jsp");
+            rd1.forward(request, response);
         }
     }
 
@@ -70,9 +70,9 @@ public class Listar extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Listar.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Mostrar.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(Listar.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Mostrar.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -90,9 +90,9 @@ public class Listar extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Listar.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Mostrar.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(Listar.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Mostrar.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

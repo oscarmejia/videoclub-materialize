@@ -16,6 +16,10 @@
         <servlet-name>Listar</servlet-name>
         <servlet-class>conecta.Listar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Mostrar</servlet-name>
+        <servlet-class>conecta.Mostrar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>InsertarRegistro</servlet-name>
         <url-pattern>/InsertarRegistro</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>Listar</servlet-name>
         <url-pattern>/Listar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Mostrar</servlet-name>
+        <url-pattern>/Mostrar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

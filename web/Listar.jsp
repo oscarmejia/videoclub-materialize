@@ -33,16 +33,17 @@
                     </thead>
                     <% 
                         ResultSet rst=(ResultSet)request.getAttribute("lista");
-                        
+                         %>  
+                        <%     
                         while (rst.next()) {
                     %>        
                     <tbody>
                         <tr>    
                             <td><%= rst.getString(2) %></td>
                             <td><%= rst.getString(3) %></td>
-                            <td><%= rst.getString(6) %></td>
+                            <td><%= rst.getString(7) %></td>
                             <td>
-                                <a href="#" class="blue-text text-lighten-1"><i class="small material-icons">visibility</i></a>
+                                <a href="Mostrar?id=<%= rst.getInt(1) %>" class="blue-text text-lighten-1"><i class="small material-icons">visibility</i></a>
                                 <a href="#" class="green-text text-lighten-1"><i class="small material-icons">edit</i></a>
                                 <a href="#" class="red-text text-lighten-1"><i class="small material-icons">delete_forever</i></a>
                             </td>
@@ -54,8 +55,8 @@
                 </table>
             </div>
         </div>
-
-
+                <!-- Dropdown Structure -->
+  
 
         <%@include file="footer.jsp" %>
         <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
