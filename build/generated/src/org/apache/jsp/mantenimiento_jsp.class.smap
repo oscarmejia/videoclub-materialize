@@ -1,0 +1,18 @@
+SMAP
+mantenimiento_jsp.java
+JSP
+*S JSP
+*F
++ 0 mantenimiento.jsp
+mantenimiento.jsp
++ 1 header.jsp
+header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+5,25:50
+5#1,104:75
+29#0,13:179
+5#2,28:192
+41#0,8:219
+*E

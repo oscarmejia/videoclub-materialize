@@ -64,7 +64,7 @@ public class IniLogin extends HttpServlet {
             
             }else{
             
-            response.sendRedirect("index.html");
+            response.sendRedirect("error.jsp");
                
             
             }
